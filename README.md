@@ -4,7 +4,7 @@ Detects kidney stones in CT scans using a finetuned Facebook's Detection Transfo
 
 ## App
 
-The app is available [here](https://havilah-psi.vercel.app/)
+The app is available [here](https://datican-test.netlify.app)
 
 ## Features
 
@@ -109,6 +109,7 @@ The model was deployed on huggingface spaces avaialble [here](https://huggingfac
 
 ```
 Havilah/
+├── media/           # Folder containing images
 ├── notebooks/           # Folder containing Jupyter notebooks
 │   └── playground.ipynb # notebook
 ├── app.py               # FastAPI backend and detection logic
@@ -141,5 +142,10 @@ MIT License
 
 - [Bamilosin Daniel Eniola](https://github.com/itsjustdannyb)
 - [Peter Godbless](https://github.com/peterwhitehat142)
+
+## Acknowledge
+
+A huge thanks to Datican and RUNACOSS for organizing this hackathon, we really learned a lot.
+All Glory to Almighty GOD!
 
 ---
