@@ -131,7 +131,7 @@ function processAndDisplayResults(imageFile, data) {
         .map(
           (box, index) => `
         <tr>
-          <td>${data.bboxes.labels[index] ?? "Unknown"}</td>
+          <td>kidney stone</td>
           <td>${(data.bboxes.scores[index] * 100).toFixed(1)}%</td>
           <td>X1:${box[0].toFixed(1)}, Y1:${box[1].toFixed(1)}<br>
               X2:${box[2].toFixed(1)}, Y2:${box[3].toFixed(1)}</td>

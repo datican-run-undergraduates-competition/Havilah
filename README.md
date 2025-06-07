@@ -1,12 +1,10 @@
 # Kidney Stone Detection with Detection Transformer (DETR)
 
-![Alt text](/preview.png "Optional Title")
-
-A web application that detects kidney stones in medical images using a finetuned Facebook's DETR (Detection Transformer) model, with visualization of cross-attention maps for interpretability.
+Detects kidney stones in CT scans using a finetuned Facebook's Detection Transformer (DETR) model, with visualization of cross-attention maps for interpretability.
 
 ## App
 
-The app is available at https://havilah.netlify.app
+The app is available at https://havilah-psi.vercel.app/
 
 ## Features
 
@@ -128,7 +126,7 @@ Havilah/
 
 ## Model Details
 
-The application uses a fine-tuned version of Facebook's DETR (Detection Transformer) model, specifically adapted for kidney stone detection:
+The application uses a fine-tuned version of Facebook's DETR (Detection Transformer) model, specifically adapted for kidney stone detection, the models are available on huggingface:
 
 - **Base Model**: `facebook/detr-resnet-50`
 - **Fine-tuned Version**: `bamswastaken/datican-detr-v2`

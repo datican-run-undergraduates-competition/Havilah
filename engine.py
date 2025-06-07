@@ -15,7 +15,7 @@ import pytorch_lightning as pl
 from transformers import DetrImageProcessor, DetrForObjectDetection
 
 class Detr(pl.LightningModule):
-     def __init__(self, lr, lr_backbone, weight_decay):
+     def __init__(self, lr, lr_backbone, weight_decay, train_dataloader, val_dataloader):
          super().__init__()
          # replace COCO classification head with custom head
          # we specify the "no_timm" variant here to not rely on the timm library
@@ -28,6 +28,9 @@ class Detr(pl.LightningModule):
          self.lr = lr
          self.lr_backbone = lr_backbone
          self.weight_decay = weight_decay
+         
+         self.train_dataloader = train_dataloader
+         self.val_dataloader = val_dataloader
 
      def forward(self, pixel_values, pixel_mask,output_attentions=True):
        outputs = self.model(pixel_values=pixel_values, pixel_mask=pixel_mask, output_attentions=output_attentions)
@@ -84,7 +87,7 @@ class Detr(pl.LightningModule):
         return optimizer
 
      def train_dataloader(self):
-        return train_dataloader
+        return self.train_dataloader
 
      def val_dataloader(self):
-        return val_dataloader
+        return self.val_dataloader
