@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Kidney Stone detection using Detection Transformer"
+    />
+    <meta
+      name="description"
+      content="Upload a CT scan and find out where kidney stones are, if any."
+    />
+    <meta
+      name="keywords"
+      content="healthcare, kidney stones, kidneys, datican, redeemers university, object detection, hackathon project"
+    />
+    <meta name="author" content="bams!" />
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://havilah.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Kidney Stone detection using Detection Transformer"
+    />
+    <meta
+      property="og:description"
+      content="Upload a CT scan and find out
+    where kidney stones are, if any."
+    />
+    <meta
+      property="og:image"
+      content="https://i.pinimg.com/736x/81/36/b2/8136b292eac087cb06fbd2d1cb0412d1.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://havilah.netlify.app/" />
+    <meta
+      property="twitter:title"
+      content="Kidney Stone detection using Detection Transformer"
+    />
+    <meta
+      property="twitter:description"
+      content="Upload a CT scan and find out
+    where kidney stones are, if any."
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.pinimg.com/736x/81/36/b2/8136b292eac087cb06fbd2d1cb0412d1.jpg"
+    />
+
+    <title>havilah - datican</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <img id="about" class="lato-bold" src="media/info_icon.png" />
+    <div id="about-section" class="hide">
+      <p class="lato-bold name">
+        Kidney stone detection using DeTr (Detection Transformers)
+      </p>
+      <p class="instructions lato-regular">
+        1. upload a CT scan <br />
+        2. inspect <br />
+        3. the first picture has the coordinates of the kidney stone drawn
+        <br />
+        4. The second image is the cross attention map of the bounding box with
+        the highest confidence
+      </p>
+
+      <p class="acknowledgement lato-light">
+        For Datican Hackathon <br />
+        &copy; 2025
+      </p>
+    </div>
+    <div class="container">
+      <p id="title" class="lato-black">Havilah</p>
+      <form class="form">
+        <div class="previews-container">
+          <div class="image-preview"></div>
+          <div class="attn-map-preview"></div>
+        </div>
+        <label for="input-file" class="custom-file-upload">
+          <input
+            type="file"
+            id="input-file"
+            class="file"
+            accept="image/*"
+            name="file"
+            required
+            hidden
+          />
+
+          <span id="file-name" class="lato-regular">add your ct scan</span>
+        </label>
+        <button type="submit" class="btn lato-regular">Inspect</button>
+      </form>
+      <span class="info lato-regular"></span>
+
+      <!-- Loading animation container -->
+      <div class="loading-container" id="loading">
+        <div class="loading-spinner"></div>
+        <p>Analyzing image...</p>
+      </div>
+
+      <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
