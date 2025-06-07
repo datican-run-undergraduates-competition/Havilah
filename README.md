@@ -4,7 +4,7 @@ Detects kidney stones in CT scans using a finetuned Facebook's Detection Transfo
 
 ## App
 
-The app is available at https://havilah-psi.vercel.app/
+The app is available [here](https://havilah-psi.vercel.app/)
 
 ## Features
 
