@@ -88,7 +88,7 @@ The model was deployed on huggingface spaces avaialble [here](https://huggingfac
 
 4. **Open `index.html` in your browser** to access the web interface.
 
-### Docker Setup
+### Docker Setup (optional)
 
 1. **Build the Docker image:**
 
