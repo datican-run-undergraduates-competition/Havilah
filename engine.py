@@ -17,14 +17,13 @@ from transformers import DetrImageProcessor, DetrForObjectDetection
 class Detr(pl.LightningModule):
      def __init__(self, lr, lr_backbone, weight_decay, train_dataloader, val_dataloader):
          super().__init__()
-         # replace COCO classification head with custom head
+         
          # we specify the "no_timm" variant here to not rely on the timm library
-         # for the convolutional backbone
          self.model = DetrForObjectDetection.from_pretrained("facebook/detr-resnet-50",
                                                              revision="no_timm",
                                                              num_labels=1,
                                                              ignore_mismatched_sizes=True)
-         # see https://github.com/PyTorchLightning/pytorch-lightning/pull/1896
+         
          self.lr = lr
          self.lr_backbone = lr_backbone
          self.weight_decay = weight_decay

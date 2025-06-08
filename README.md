@@ -1,6 +1,7 @@
 # Kidney Stone Detection with Detection Transformer (DETR)
 
-Detects kidney stones in CT scans using a finetuned Facebook's Detection Transformer (DETR) model, with visualization of cross-attention maps for interpretability.
+Approximately 10% of people will get a kidney stone in their lifetime (National Kidney Foundation). Current diagnosis relies on radiologists manually marking out stones in medical image scans, small stones are often missed, but cause recurrent pain.
+Havilah detects kidney stones in CT scans using a finetuned Facebook's Detection Transformer (DETR) model, with visualization of cross-attention maps for interpretability.
 
 ## App
 

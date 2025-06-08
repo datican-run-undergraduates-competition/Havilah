@@ -22,7 +22,7 @@ from PIL import Image
 from pathlib import Path
 
 
-!pip install hf_xet
+# !pip install hf_xet
 from transformers import DetrImageProcessor, DetrForObjectDetection
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"running on {device}")
@@ -70,6 +70,9 @@ val_dataset = KidneyStoneDataset(valid_folder / "images", valid_folder / "labels
 train_dataloader = DataLoader(train_dataset, BATCH_SIZE, shuffle=True, collate_fn=collate_fn, num_workers=3)
 val_dataloader = DataLoader(val_dataset, BATCH_SIZE, shuffle=False, collate_fn=collate_fn, num_workers=3)
 
+lr=1e-4, 
+lr_backbone=1e-5, 
+weight_decay=1e-4
 
 model = Detr(lr=lr, lr_backbone=lr_backbone, weight_decay=weight_decay).to(device)
 trainer = Trainer(max_steps=300, gradient_clip_val=0.1)
