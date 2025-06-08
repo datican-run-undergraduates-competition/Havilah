@@ -21,7 +21,7 @@
 
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://havilah-psi.vercel.app/" />
+    <meta property="og:url" content="https://datican-test.netlify.app/" />
     <meta
       property="og:title"
       content="Kidney Stone detection using Detection Transformer"
@@ -38,7 +38,7 @@
 
     <!-- Twitter Meta Tags -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://havilah-psi.vercel.app/" />
+    <meta property="twitter:url" content="https://datican-test.netlify.app/" />
     <meta
       property="twitter:title"
       content="Kidney Stone detection using Detection Transformer"
@@ -61,8 +61,26 @@
     <img id="about" class="lato-bold" src="media/info_icon.png" />
     <div id="about-section" class="hide">
       <p class="lato-bold name">
-        Kidney stone detection using DeTr (Detection Transformers)
+        Kidney stone detection using Detection Transformers (DETR)
       </p>
+      <p class="intro lato-regular">
+        Accoding to the National Kidney Foundation ~10% of people will get a
+        kidney stone in their lifetime
+        <br />
+        <br />
+        Current diagnosis relies on radiologists manually marking stones in CT
+        scans, small stones are often missed, but cause recurrent pain
+        <br />
+        <br />
+        Havilah uses object detection to determine the location of kidney stones
+        and displays what area of the CT scan the model uses to give its highest
+        prediction
+      </p>
+      <img
+        class="test-img"
+        src="media/havilah detection gif.gif"
+        alt="bounding box and attention map as a gif"
+      />
       <p class="instructions lato-regular">
         1. Upload your CT scan <br />
         2. Click on inspect <br />
@@ -79,6 +97,7 @@
         &copy; 2025
       </p>
     </div>
+
     <div class="container">
       <p id="title" class="lato-black">Havilah</p>
       <form class="form">
