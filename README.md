@@ -6,6 +6,13 @@ Detects kidney stones in CT scans using a finetuned Facebook's Detection Transfo
 
 The app is available [here](https://datican-test.netlify.app)
 
+## Test Images
+
+Download these sample images to test the model:
+
+- [![Sample 1](media/test_img.jpg)](media/test_img.jpg?raw=true) [Click to download]
+- [![Sample 2](media/test_img_1.jpg)](media/test_img_1.jpg?raw=true) [Click to download]
+
 ## Features
 
 - 🏥 **Kidney Stone Detection**: Identifies kidney stones in medical images with bounding boxes
