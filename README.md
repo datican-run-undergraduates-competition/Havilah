@@ -10,8 +10,8 @@ The app is available [here](https://datican-test.netlify.app)
 
 Download these sample images to test the model:
 
-- [![Sample 1](media/test_img.jpg)](media/test_img.jpg?raw=true) [Click to download]
-- [![Sample 2](media/test_img_1.jpg)](media/test_img_1.jpg?raw=true) [Click to download]
+- [test image 1](media/test_img.jpg?raw=true)
+- [test image 2](media/test_img_1.jpg?raw=true)
 
 ## Features
 
@@ -116,8 +116,8 @@ The model was deployed on huggingface spaces avaialble [here](https://huggingfac
 
 ```
 Havilah/
-├── media/           # Folder containing images
-├── notebooks/           # Folder containing Jupyter notebooks
+├── media/               # Folder containing images
+├── notebooks/           # Folder containing Jupyter notebook for model training
 │   └── playground.ipynb # notebook
 ├── app.py               # FastAPI backend and detection logic
 ├── data.py              # The dataset for the model
