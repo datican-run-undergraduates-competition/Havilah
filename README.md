@@ -10,8 +10,8 @@ The app is available [here](https://datican-test.netlify.app)
 
 Download these sample images to test the model:
 
-- [test image 1](media/test_img.jpg?raw=true)
-- [test image 2](media/test_img_1.jpg?raw=true)
+- ![test image 1](https://github.com/datican-run-undergraduates-competition/Havilah/blob/main/media/test_img.jpg?raw=true)[click to download]
+- ![test image 2](https://github.com/datican-run-undergraduates-competition/Havilah/blob/main/media/test_img_1.jpg?raw=true)[click to download]
 
 ## Features
 
